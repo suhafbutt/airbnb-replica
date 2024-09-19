@@ -1,5 +1,5 @@
-import logo1 from './logo.svg';
-import logo from './airbnb.svg';
+import logo from './assets/img/airbnb.svg';
+import image1 from './assets/img/hero.svg';
 import './App.css';
 
 function App() {
@@ -9,19 +9,18 @@ function App() {
         <nav className="header-nav">
           <img src={logo} alt="logo" />
         </nav>
-        <img src={logo1} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
+
+      <section className="hero-content">
+        <img src={image1} alt="logo" className="hero-image"/>
+        <h1 className="hero-header">
+          Online Experiences
+        </h1>
+
+        <p className="hero-text">
+          Join unique interactive activities led by one-of-a-kind hosts—all without leaving home.
+        </p>
+      </section>
     </div>
   );
 }
